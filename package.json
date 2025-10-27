@@ -11,7 +11,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "postinstall": "max setup 2>/dev/null || true",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "build-release": "node build-release.js"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -97,7 +98,7 @@
     "@keyv/sqlite": "^4.0.1",
     "proper-lockfile": "^4.1.2",
     "compression": "^1.7.4",
-    "helmet": "^6.0.1"
+    "helmet": "^8.1.0"
   },
   "devDependencies": {
     "moment": "2.30.1",
