@@ -69,7 +69,7 @@ RUN set -x && \
   rm -rf /etc/apt/apt.conf.d/docker-clean && \
   ulimit -c 0
 
-RUN mkdir -p ${QL_DIR} ${QL_DIR}/data && \
+RUN mkdir -p ${QL_DIR} && \
   chown -R ${QL_UID}:${QL_GID} ${QL_DIR}
 
 USER qinglong
